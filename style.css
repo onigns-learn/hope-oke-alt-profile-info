@@ -1,0 +1,90 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: gray;
+  color: aqua;
+  padding: 20px;
+}
+
+/* Container Layout */
+.grid-container {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+ }
+
+/* Intro Section */
+
+.introduction {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: right;
+  gap: 20px;
+  background: #165e63;
+  background-color: rgb(104, 84, 250);
+  color: aqua;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Profile Picture Placeholder */
+.profile-pic {
+  width: 100%;
+  margin: 10px;
+  background: #ccc;
+  border-radius: 100%;
+  border: 4px solid #666;
+  object-fit: cover;
+}
+
+/* Content Grid (Hobbies & Aspiration) */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  color: aqua;
+  
+}
+
+/* Boxes */
+.box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 6px rgba(69, 13, 137, 0.05);
+  background-color: rgb(133, 121, 228);
+}
+
+
+
+ .heading {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+  
+    
+/* Responsive for Mobile */
+
+@media (max-width: 768px) {
+  .introduction {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+ 
+    .content {
+    grid-template-columns: 1fr;
+  }
+}
